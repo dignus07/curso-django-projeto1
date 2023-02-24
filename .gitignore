@@ -1,2 +1,3 @@
 guardados
 venv
+.mypy_cache
