@@ -103,3 +103,6 @@ python manage.py startapp recipes
 
 => Erro terrivel: TemplateDoesNotExist :
 é só setar no nome dos app's no setting da aplicação no INSTALLED_APPS
+
+=>Para tyornar o import menor cober na tela.
+tecla: ALT + z
