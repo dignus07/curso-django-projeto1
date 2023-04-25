@@ -1,0 +1,105 @@
+Link do urso:
+https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/learn/lecture/29432168?start=420#overview
+
+
+==>Ambiente virtual do python3:
+
+=>Criar o ambiente virtual:
+python3 -m venv venv
+
+=>Ativar o ambiente virtual:
+source venv/bin/activate
+. venv/bin/activate
+
+=>Desativar o ambiente:
+deactivate
+
+=> Comandos do pip:
+pip install pip --upgrade
+pip install <pacote-python>
+pip freeze
+pip install pip setuptools wheel --upgrade 
+OBS: ver no site do Django qual e a versao LTS no caso agora é 3.2.18 para instalar
+pip install django==3.2.18
+
+
+ 
+=> Git config:
+git config --global user.name "Magnus Teixeira Ribeiro"
+git config --global user.email "dignus07@gmail.com"
+git config --global init.defaultBranch main
+git init
+
+=> Criar chave ssh:
+ssh-keygen
+=> Caminhos das chaves geradas privada e publica
+Your identification has been saved in /home/dignux/.ssh/id_rsa
+Your public key has been saved in /home/dignux/.ssh/id_rsa.pub
+
+=> ligar o repositoro do github que criei curso-django-projeto1
+
+git remote add origen git@github.com:dignus07/curso-django-projeto1.git
+=> para ver:
+git remote -v
+
+=> Comandos mais usados
+git status
+git add .
+git commit -m "Titulo"
+=> para subir paro op repositorio
+git push --set-upstream origin main
+=> Primeiro push:
+git remote add origin git@github.com:dignus07/curso-django-projeto1.git
+git push -u origin main 
+=> para comitar
+ git commit -m "Msg"
+
+=> Repositorio main do curso:
+https://github.com/luizomf/curso-django-projeto1
+
+
+=> Para ver comandos do django-admin
+django-admin -help
+retorna:
+[django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    optimizemigration
+    runserver
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+
+=> criar o projeto django:
+(Ponta indica para django para criar os arquivos dentro desse path)
+django-admin startproject <nome do projeto> . 
+
+django-admin startproject projeto .
+
+-x-x-Vamos rodar o django-x-x-
+=> Comando para rodar o servidor django:
+python manage.py runserver
+
+=> Criar um applicativo de receitas = recipes
+python manage.py startapp recipes
+
+=> Erro terrivel: TemplateDoesNotExist :
+é só setar no nome dos app's no setting da aplicação no INSTALLED_APPS
